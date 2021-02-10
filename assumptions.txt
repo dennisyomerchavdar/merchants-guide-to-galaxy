@@ -1,0 +1,14 @@
+Inputs are checked with regexes and they are strictly checked, they are case sensitive and also white space sesitive. Format is the same as the example, i will give the exact regex below.
+	dictionary definition regex format: "^(\\w+) is (\\w)$"
+	value definition regex format: "^((?:(?:\\w+) )+)(\\w+) is (\\d+[.]?\\d*) Credits$"
+	how much question regex format: ^how much is ((?:(?:\\w+) )+)\\?$
+	how many question regex format: ^how many Credits is ((?:(?:\\w+) )+)(\\w+) \\?$
+
+For input, first, dictionary definitions will be given, then item values, and then queries, there are two kinds of queries and they can be mixed among themselves.
+Errors during definition phase shuts down the program with appopriate error messages, errors for questions causes the respective question to be answered with "I have no idea what you are talking about"
+
+Roman numerals are also handled strictly, wrong roman numerals will be detected and they will handled accordingly.
+
+ 
+
+
